@@ -6,11 +6,12 @@
     <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
-        body {
+        #main {
             /*background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
-            background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-            background-repeat: no-repeat;
-            background-size: cover;
+            /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+            /* background-repeat: no-repeat; */
+            /*height: 100%;
+            background-size: cover;*/
         }
         
         .overlay {
@@ -48,15 +49,14 @@
         .overlay a:focus {
             color: #fff;
         }
-        
-        @media screen and (max-height: 450px) {
+        /* @media screen and (max-height: 450px) {
             .overlay {
                 overflow-y: auto;
             }
             .overlay a {
                 font-size: 20px
             }
-        }
+        } */
         
         .hamburger {
             display: inline-block;
@@ -72,7 +72,7 @@
         .bar3 {
             width: 35px;
             height: 5px;
-            background-color: blue;
+            background-color: #f1f1f1;
             margin: 6px 0;
             transition: 0.4s;
         }
@@ -100,6 +100,9 @@
                 right: 30px;
                 top: 20px;
             }
+            div {
+                font-size: 30px;
+            }
         }
         
         div {
@@ -114,7 +117,7 @@
     </style>
 </head>
 
-<body>
+<body id="main">
 
     <div>
         Overlay Navbar Example
